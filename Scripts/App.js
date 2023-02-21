@@ -41,10 +41,10 @@ $(document).ready(function () {
                 var endHour = $("#endHour").val();
 
                 if (initHour == "0")
-                    initHour = "09:00";
+                    initHour = "01:00";
 
                 if (endHour == "0")
-                    endHour = "09:00";
+                    endHour = "01:00";
 
                 var initDate = $(this).val().split('/').reverse().join('-') + "T" + initHour + ":00";
                 var endDate = $(this).val().split('/').reverse().join('-') + "T" + endHour + ":00";
@@ -95,10 +95,10 @@ $(document).ready(function () {
             var endHour = $("#endHour").val();
 
             if (initHour == "0")
-                initHour = "09:00";
+                initHour = "01:00";
 
             if (endHour == "0")
-                endHour = "21:00";
+                endHour = "23:59";
 
             var initDate = date.split('/').reverse().join('-') + "T" + initHour + ":00";
             var endDate = date.split('/').reverse().join('-') + "T" + endHour + ":00";
@@ -117,10 +117,10 @@ $(document).ready(function () {
             var endHour = $(this).val();
 
             if (initHour == "0")
-                initHour = "09:00";
+                initHour = "01:00";
 
             if (endHour == "0")
-                endHour = "21:00";
+                endHour = "23:59";
 
             var initDate = date.split('/').reverse().join('-') + "T" + initHour + ":00";
             var endDate = date.split('/').reverse().join('-') + "T" + endHour + ":00";
@@ -139,15 +139,15 @@ $(document).ready(function () {
 
             if ($(this).is(':checked')) {
 
-                $("#startHour").val("09:00");
-                $("#endHour").val("21:00");
+                $("#startHour").val("01:00");
+                $("#endHour").val("23:59");
 
                 $("#startHour").attr("disabled", "disabled");
                 $("#endHour").attr("disabled", "disabled");
 
                 if (date != "") {
-                    initDate = initDate + "T09:00:00";
-                    endDate = endDate + "T21:00:00";
+                    initDate = initDate + "T01:00:00";
+                    endDate = endDate + "T23:59:00";
 
                     MyApp.RoomReservation.GetAvailableRooms(initDate, endDate, "Rooms");
                 }
@@ -162,8 +162,8 @@ $(document).ready(function () {
 
 
                 if (date != "") {
-                    initDate = initDate + "T09:00:00";
-                    endDate = endDate + "T09:00:00";
+                    initDate = initDate + "T01:00:00";
+                    endDate = endDate + "T01:00:00";
 
 
                     MyApp.RoomReservation.GetAvailableRooms(initDate, endDate, "Rooms");
