@@ -62,6 +62,10 @@
             <div class="col-sm-8">
                 <select id="startHour" class="form-control">
                     <option value="0" data-language="selectstarthour">- Select the start hour -</option>
+		    <option value="05:00">05:00</option>
+		    <option value="06:00">06:00</option>
+		    <option value="07:00">07:00</option>
+		    <option value="08:00">08:00</option>
                     <option value="09:00">09:00</option>
                     <option value="09:30">09:30</option>
                     <option value="10:00">10:00</option>
@@ -95,6 +99,10 @@
             <div class="col-sm-8">
                 <select id="endHour" class="form-control">
                     <option value="0" data-language="selectendhour">- Select the end hour -</option>
+		    <option value="05:00">05:00</option>
+		    <option value="06:00">06:00</option>
+		    <option value="07:00">07:00</option>
+		    <option value="08:00">08:00</option>
                     <option value="09:00">09:00</option>
                     <option value="09:30">09:30</option>
                     <option value="10:00">10:00</option>
